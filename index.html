@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота: Валідація та Таблиця</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h3>Завдання 1: Валідація форми</h3>
+        <form id="userForm">
+            <div class="form-group">
+                <label>ПІБ (ТТТТТТ Т.Т.)</label>
+                <input type="text" id="pib" placeholder="Подолян С.С.">
+            </div>
+            
+            <div class="form-group">
+                <label>Група (ТТ-ЧЧ)</label>
+                <input type="text" id="group" placeholder="ІК-34">
+            </div>
+
+            <div class="form-group">
+                <label>Телефон (ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ</label>
+                <input type="text" id="phone" placeholder="(097)-111-22-33">
+            </div>
+
+            <div class="form-group">
+                <label>Адреса (м. ЧЧЧЧЧЧ)</label>
+                <input type="text" id="address" placeholder="м. Київ">
+            </div>
+
+            <div class="form-group">
+                <label>e-mail (тттттт@ттттт.com)</label>
+                <input type="text" id="email" placeholder="email@example.com">
+            </div>
+
+            <button type="button" onclick="validateForm()">Перевірити</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div>
+        <h3>Завдання 2: Інтерактивна таблиця (Варіант 10)</h3>
+        <div class="controls">
+            <label for="colorPicker">Оберіть колір для кліку:</label>
+            <input type="color" id="colorPicker" value="#ff0000">
+        </div>
+        <table id="myTable">
+            </table>
+    </div>
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
